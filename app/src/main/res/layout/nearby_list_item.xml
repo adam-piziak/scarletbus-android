@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/nearby_item_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+
+        android:elevation="1.5dp">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="8dp"
+                  android:orientation="horizontal">
+        <TextView
+                android:fontFamily="sans-serif-medium"
+                android:transitionName="sharedName"
+                android:id="@+id/item_nearby_stop"
+                tools:text="PLACEHOLDER"
+                android:textSize="20sp"
+                android:textColor="#222222"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/distance"
+                android:fontFamily="sans-serif-medium"
+                tools:text="5m away"
+                android:textColor="#45A545"
+                android:gravity="top"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_margin="8dp"
+            android:id="@+id/served_routes_rv"
+            android:layout_marginTop="4dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+
+            android:id="@+id/item_nearby_stop_area"
+            tools:text="PLACEHOLDER"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
+            android:textColor="#888888"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
+
